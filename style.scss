@@ -18,11 +18,13 @@ button {
   cursor: pointer;
 }
 
-.first {
+.header-section {
   color: white;
 
-  .cont1 {
+  .header-wrapper {
+
     header {
+
       .header {
         padding: 20px 0;
         display: flex;
@@ -30,24 +32,24 @@ button {
         align-items: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.29);
 
-        .head2 {
-          ul {
+        .nav {
+          .nav-list {
             display: flex;
             list-style: none;
             gap: 60px;
 
-            .product {
-              color: white;
-            }
-
-            li {
+            .nav-item {
               cursor: pointer;
               color: rgba(217, 214, 214, 0.556);
+
+              &--active {
+                color: white;
+              }
             }
           }
         }
 
-        .head3 {
+        .signin-button {
           button {
             padding: 10px 25px;
             color: white;
@@ -64,20 +66,20 @@ button {
   }
 }
 
-.second {
+.hero-section {
   color: white;
   padding-bottom: 100px;
 
-  .cont2 {
+  .hero-wrapper {
     display: flex;
     align-items: center;
 
-    .sec_one {
+    .hero-image {
       padding-top: 340px;
       padding-bottom: 110px;
       flex: 1;
       border-right: 1px solid rgba(255, 255, 255, 0.29);
-      background: radial-gradient(darkblue, rgb(1, 1, 84), rgb(1, 1, 84), transparent, transparent, rgb(74, 2, 74), transparent, transparent, transparent, transparent);
+      background: radial-gradient(darkblue, rgb(1, 1, 84), rgb(1, 1, 84), transparent, transparent, rgb(74, 2, 74), transparent);
 
       img {
         position: relative;
@@ -86,12 +88,12 @@ button {
       }
     }
 
-    .sec_two {
+    .hero-content {
       padding-top: 60px;
       flex: 1;
       padding-left: 20px;
 
-      .sec1 {
+      .hero-title {
         h1 {
           font-size: 60px;
           letter-spacing: 1px;
@@ -99,151 +101,89 @@ button {
         }
       }
 
-      .sec2 {
+      .hero-description {
         color: rgba(217, 214, 214, 0.556);
         padding-bottom: 80px;
       }
 
-      .sec3 {
+      .hero-buttons {
         display: flex;
         gap: 30px;
 
-        .btn1 {
+        .btn-primary,
+        .btn-secondary {
           button {
             padding: 15px 25px;
             border-radius: 30px;
             border: 1px solid white;
-            background-color: dodgerblue;
             color: white;
           }
         }
 
-        .btn2 {
-          button {
-            padding: 15px 25px;
-            border-radius: 30px;
-            border: 1px solid white;
-            background-color: transparent;
-            color: white;
-          }
+        .btn-primary button {
+          background-color: dodgerblue;
+        }
+
+        .btn-secondary button {
+          background-color: transparent;
         }
       }
     }
   }
 }
 
-.third {
+.features-section {
   color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 
-  .cont3 {
+  .features-wrapper {
     display: flex;
     justify-content: center;
     gap: 150px;
 
-    .third_one {
+    .feature {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      .three_1 {
+      .feature-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
 
-      img {
-        width: 160px;
-        margin-bottom: 30px;
-        border-radius: 20px;
-      }
+        img {
+          width: 160px;
+          margin-bottom: 30px;
+          border-radius: 20px;
+        }
 
-      h2 {
-        padding-bottom: 20px;
-      }
+        h2 {
+          padding-bottom: 20px;
+        }
 
-      p {
-        color: rgba(217, 214, 214, 0.556);
-
-      }
-    }
-
-    .third_two {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .three_1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      img {
-        width: 160px;
-        margin-bottom: 30px;
-        border-radius: 20px;
-      }
-
-      h2 {
-        padding-bottom: 20px;
-      }
-
-      p {
-        color: rgba(217, 214, 214, 0.556);
-
-      }
-    }
-
-    .third_three {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .three_1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      img {
-        width: 160px;
-        margin-bottom: 30px;
-        border-radius: 20px;
-      }
-
-      h2 {
-        padding-bottom: 20px;
-      }
-
-      p {
-        color: rgba(217, 214, 214, 0.556);
-
+        p {
+          color: rgba(217, 214, 214, 0.556);
+        }
       }
     }
   }
 }
 
-.fourth {
+.about-section {
   color: white;
   padding: 40px 0 30px;
 
-  .cont4 {
+  .about-wrapper {
     display: flex;
     align-items: center;
 
-    .cont1 {
+    .about-image {
       padding-top: 300px;
       padding-bottom: 150px;
       flex: 1;
-      background: radial-gradient(dodgerblue,   rgb(1, 1, 84), blue, transparent, transparent, dodgerblue, transparent, transparent, transparent, transparent);
+      background: radial-gradient(dodgerblue, rgb(1, 1, 84), blue, transparent, transparent, dodgerblue, transparent);
 
       img {
         position: relative;
@@ -252,11 +192,11 @@ button {
       }
     }
 
-    .cont2 {
+    .about-content {
       flex: 1;
       padding-left: 30px;
 
-      .mobile1 {
+      .about-label {
         p {
           display: inline-block;
           background: linear-gradient(to right, aqua, lightgreen, orange);
@@ -264,19 +204,19 @@ button {
         }
       }
 
-      .mobile2 {
+      .about-title {
         h1 {
           padding-bottom: 14px;
         }
       }
 
-      .mobile3 {
-        .div1 {
+      .about-text {
+        .about-paragraph {
           padding-bottom: 14px;
           color: rgba(217, 214, 214, 0.556);
         }
 
-        .div2 {
+        .about-cta {
           p {
             color: orange;
           }
@@ -291,110 +231,106 @@ button {
     width: 95%;
   }
 
-  .fourth .cont4 .cont1 img{
+  .about-section .about-wrapper .about-image img {
     left: 10px;
   }
 
-  .third .cont3 {
+  .features-section .features-wrapper {
     gap: 80px;
   }
 }
 
 @media (max-width: 992px) {
 
-  .second .cont2,
-  .fourth .cont4 {
+  .hero-wrapper,
+  .about-wrapper {
     flex-direction: column;
     text-align: center;
   }
 
-  .second .cont2 .sec_one,
-  .second .cont2 .sec_two,
-  .fourth .cont4 .cont1,
-  .fourth .cont4 .cont2 {
+  .hero-image,
+  .hero-content,
+  .about-image,
+  .about-content {
     flex: none;
     width: 100%;
     border: none;
     padding-left: 0;
   }
 
-  .second .cont2 .sec_one img{
+  .hero-image img {
     width: 70%;
     top: -70px;
     left: -30px;
   }
 
-  .fourth .cont4 .cont1 img {
+  .about-image img {
     top: 0;
     left: 0;
     width: 70%;
   }
 
-  .second .cont2 .sec3 {
-    display: flex;
+  .hero-buttons {
     flex-direction: column;
   }
 
-
-  .third .cont3 {
+  .features-wrapper {
     flex-direction: column;
     gap: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .second .cont2 .sec_one img {
-    position: relative;
+  .hero-image img {
     top: -60px;
     left: -30px;
   }
 
-  .first .cont1 .header {
+  .header .header {
     display: none;
   }
 
-  .first .cont1 .header .head2 .uls li {
+  .nav-list li {
     display: none;
   }
 
-  .second .cont2 .sec_two .sec1 h1 {
+  .hero-title h1 {
     font-size: 40px;
   }
 
-  .second .cont2 .sec3 {
-    flex-direction: column;
+  .hero-buttons {
     align-items: center;
   }
 
-  .fourth .cont4 .cont2 .mobile2 h1 {
+  .about-title h1 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 576px) {
-  .second .cont2 .sec_two .sec1 h1 {
+  .hero-title h1 {
     font-size: 30px;
   }
 
-  .fourth .cont4 .cont2 .mobile2 h1 {
+  .about-title h1 {
     font-size: 22px;
   }
 
-  .first .cont1 .header .head3 button {
+  .signin-button button {
     padding: 8px 20px;
     font-size: 14px;
   }
 
-  .second .cont2 .sec3 button,
-  .head3 button {
+  .hero-buttons button,
+  .signin-button button {
     padding: 12px 20px;
   }
 }
 
 .container,
 .header,
-.cont2,
-.cont3,
-.cont4 {
+.hero-wrapper,
+.features-wrapper,
+.about-wrapper {
   transition: all 0.3s ease;
 }
